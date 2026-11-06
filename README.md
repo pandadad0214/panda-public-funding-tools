@@ -2,9 +2,9 @@
 
 <!-- mcp-name: io.github.pandadad0214/panda-public-funding-tools -->
 
-**US federal money and filings: grants, contracts, SBIR/STTR topics, SEC financials, clinical trials.**
+**US federal money, filings and safety monitors: grants, contracts, SBIR/STTR, SEC, clinical trials, Federal Register, recalls, VIN decode.**
 
-Focused MCP server (5 tools) from the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) public-data toolkit. Prefer this over the 23-tool mega-server for better Tool Definition Quality Score (TDQS) / Glama coherence.
+Focused MCP server (8 tools) from the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) public-data toolkit. Prefer this over the 27-tool mega-server index for better Tool Definition Quality Score (TDQS) / Glama coherence.
 
 [![Umbrella](https://img.shields.io/badge/index-panda--federation--tools-blue)](https://github.com/pandadad0214/panda-federation-tools)
 [![Apify Store](https://img.shields.io/badge/Apify_Store-pandadad0214-00a3ff)](https://apify.com/pandadad0214)
@@ -28,13 +28,16 @@ Cursor / Claude / VS Code: command `uvx`, args `["--from", "panda-federation-too
 
 Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda-public-funding-tools` ([server.json](server.json)). Registry clients install the PyPI package with `uvx` after the matching version is published. The git command above stays the install path from this repo.
 
-## Tools (5)
+## Tools (8)
 
 - `grants_finder`
 - `federal_contract_finder`
 - `sbir_sttr_topic_radar`
 - `sec_financials_excel`
 - `clinical_trial_leads`
+- `federal_register_monitor`
+- `product_recall_monitor`
+- `vin_decoder_recalls`
 
 Each tool runs one Apify Actor on your account. Empty runs are not charged per result; every call is capped by `run_max_charge_usd`. Full schemas and prices: [umbrella README](https://github.com/pandadad0214/panda-federation-tools#domain-tool-lists).
 
