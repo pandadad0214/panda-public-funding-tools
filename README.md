@@ -1,5 +1,7 @@
 # Panda Public Funding Tools
 
+<!-- mcp-name: io.github.pandadad0214/panda-public-funding-tools -->
+
 **US federal money and filings: grants, contracts, SBIR/STTR topics, SEC financials, clinical trials.**
 
 Focused MCP server (5 tools) from the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) public-data toolkit. Prefer this over the 23-tool mega-server for better Tool Definition Quality Score (TDQS) / Glama coherence.
@@ -23,6 +25,8 @@ uvx --from git+https://github.com/pandadad0214/panda-public-funding-tools panda-
 ```
 
 Cursor / Claude / VS Code: command `uvx`, args `["--from", "panda-federation-tools", "panda-public-funding-tools"]`, env `APIFY_TOKEN`.
+
+Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda-public-funding-tools` ([server.json](server.json)). Registry clients install the PyPI package with `uvx` after the matching version is published. The git command above stays the install path from this repo.
 
 ## Tools (5)
 
