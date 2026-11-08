@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "panda-public-funding-tools"
 version = "0.1.0"
-description = "Panda Public Funding Tools: US federal money, filings and safety monitors (grants, contracts, SBIR/STTR, SEC, clinical trials, Federal Register, recalls, VIN)."
+description = "Panda Public Funding Tools: uS federal money, filings and safety monitors: grants, contracts, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls, VIN decode."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]

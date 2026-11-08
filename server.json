@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pandadad0214/panda-public-funding-tools",
   "title": "Panda Public Funding Tools",
-  "description": "US federal money and filings — grants, contracts, SBIR/STTR, SEC, clinical trials (5 tools).",
+  "description": "US federal filings & safety — grants, contracts, SBIR, SEC, trials, FedReg, recalls, VIN (8 tools).",
   "websiteUrl": "https://github.com/pandadad0214/panda-public-funding-tools",
   "repository": {
     "url": "https://github.com/pandadad0214/panda-public-funding-tools",
