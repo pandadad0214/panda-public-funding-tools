@@ -1,0 +1,22 @@
+{
+  "name": "panda-public-funding-tools",
+  "version": "0.1.0",
+  "description": "US federal filings & safety MCP tools: grants, contracts, SBIR, SEC, trials, FedReg, recalls, VIN (8 tools).",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "Apify API Token",
+      "description": "Free Apify API token from https://console.apify.com/settings/integrations. Runs bill to your Apify account.",
+      "envVar": "APIFY_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "panda-public-funding-tools": {
+      "command": "uvx",
+      "args": [
+        "panda-public-funding-tools"
+      ]
+    }
+  }
+}
