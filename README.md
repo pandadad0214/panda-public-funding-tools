@@ -4,6 +4,8 @@
 
 Give Claude, Cursor or any MCP client 8 US federal money and filings tools: grants, contract awards and recompetes, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls and VIN decode. Each tool runs one public-data Apify Actor on your own Apify account and is priced per result. Part of the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) toolkit (36 tools in four focused servers).
 
+[![PyPI](https://img.shields.io/pypi/v/panda-public-funding-tools)](https://pypi.org/project/panda-public-funding-tools/)
+[![Latest Release](https://img.shields.io/github/v/release/pandadad0214/panda-public-funding-tools?label=latest%20release)](https://github.com/pandadad0214/panda-public-funding-tools/releases/latest)
 [![Umbrella](https://img.shields.io/badge/index-panda--federation--tools-blue)](https://github.com/pandadad0214/panda-federation-tools)
 [![Apify Store](https://img.shields.io/badge/Apify_Store-pandadad0214-00a3ff)](https://apify.com/pandadad0214)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -11,15 +13,15 @@ Give Claude, Cursor or any MCP client 8 US federal money and filings tools: gran
 ## How to use this
 
 ```bash
-uvx --from panda-federation-tools panda-public-funding-tools
+uvx panda-public-funding-tools
 ```
 
 1. **Get a free Apify token** at [console.apify.com/settings/integrations](https://console.apify.com/settings/integrations) (the free plan includes $5 of monthly credit) and install [uv](https://docs.astral.sh/uv/).
-2. **Add the server to your MCP client:** command `uvx`, args `["--from", "panda-federation-tools", "panda-public-funding-tools"]`, env `APIFY_TOKEN` (Cursor JSON below).
+2. **Add the server to your MCP client:** command `uvx`, args `["panda-public-funding-tools"]`, env `APIFY_TOKEN` (Cursor JSON below).
 3. **Ask in plain words**, e.g. "Find open federal grants on wildfire sensors and the contracts in that NAICS ending in the next six months." Start with one or two inputs and read the `summary` / `agentSummary` line before widening.
 
 ```json
-{"mcpServers": {"panda-public-funding-tools": {"command": "uvx", "args": ["--from", "panda-federation-tools", "panda-public-funding-tools"], "env": {"APIFY_TOKEN": "apify_api_YOUR_TOKEN"}}}}
+{"mcpServers": {"panda-public-funding-tools": {"command": "uvx", "args": ["panda-public-funding-tools"], "env": {"APIFY_TOKEN": "apify_api_YOUR_TOKEN"}}}}
 ```
 
 ## For AI agents
@@ -29,7 +31,7 @@ uvx --from panda-federation-tools panda-public-funding-tools
 | Purpose | Focused MCP server with 8 US federal money and filings tools: grants, contract awards and recompetes, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls and VIN decode. |
 | Use when | A task needs US federal funding, contract, filing, regulatory or safety-recall data from official government APIs. |
 | Do not use when | The task is about papers and citations (use `panda-research-tools`), private-sector leads (`panda-leads-tools`) or site/email safety (`panda-web-security-tools`). |
-| Install | `uvx --from panda-federation-tools panda-public-funding-tools` (stdio, Python 3.11+) |
+| Install | `uvx panda-public-funding-tools` (stdio, Python 3.11+) |
 | Auth | `APIFY_TOKEN` env var; runs bill to that Apify account. |
 | Tools | 8, listed under [Tools](#tools-8) |
 | Outputs | JSON rows plus a one-line `summary` / `agentSummary`; Excel/CSV files on the Apify run. |
@@ -37,15 +39,21 @@ uvx --from panda-federation-tools panda-public-funding-tools
 
 ## Other ways to install
 
+From the umbrella package (same tools):
+
+```bash
+uvx --from panda-federation-tools panda-public-funding-tools
+```
+
 From this repo instead of PyPI:
 
 ```bash
 uvx --from git+https://github.com/pandadad0214/panda-public-funding-tools panda-public-funding-tools
 ```
 
-Cursor / Claude / VS Code: command `uvx`, args `["--from", "panda-federation-tools", "panda-public-funding-tools"]`, env `APIFY_TOKEN`.
+Cursor / Claude / VS Code: command `uvx`, args `["panda-public-funding-tools"]`, env `APIFY_TOKEN`.
 
-Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda-public-funding-tools` ([server.json](server.json)). Registry clients install the PyPI package with `uvx` after the matching version is published. The git command above stays the install path from this repo.
+Official MCP Registry name for this stdio package: `io.github.pandadad0214/panda-public-funding-tools` ([server.json](server.json)). Registry clients install the PyPI package with `uvx panda-public-funding-tools`. The git command above stays the install path from this repo.
 
 ## Tools (8)
 
