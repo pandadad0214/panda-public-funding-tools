@@ -2,20 +2,20 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pandadad0214/panda-public-funding-tools",
   "title": "Panda Public Funding Tools",
-  "description": "US federal filings & safety — grants, contracts, SBIR, SEC, trials, FedReg, recalls, VIN (8 tools).",
+  "description": "Public money & safety: grants, contracts, SAM.gov bids, SBIR, SEC, FedReg, recalls, EU tenders (10).",
   "websiteUrl": "https://github.com/pandadad0214/panda-public-funding-tools",
   "repository": {
     "url": "https://github.com/pandadad0214/panda-public-funding-tools",
     "source": "github",
     "id": "1447663620"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packages": [
     {
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "panda-public-funding-tools",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"

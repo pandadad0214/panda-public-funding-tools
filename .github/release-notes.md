@@ -8,6 +8,9 @@ uvx panda-public-funding-tools@{{VERSION}}
 - Official MCP Registry name: `io.github.pandadad0214/panda-public-funding-tools`.
 
 ### Added
-- First PyPI and Official MCP Registry release of this focused domain server ({{VERSION}}).
+- `sam_gov_opportunities` and `eu_ted_tenders` (EU tenders moved from leads). This server now has 10 tools.
+
+### Changed
+- Syncs with panda-federation-tools 1.8.0 (40 tools across four focused servers). Requires `panda-federation-tools>=1.8.0,<2`.
 
 Full docs: [README](https://github.com/pandadad0214/panda-public-funding-tools#readme).

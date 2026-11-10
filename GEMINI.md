@@ -3,8 +3,8 @@
 Focused MCP server for US federal money, filings, and safety monitors.
 
 ## When to use
-- Find grants, federal contracts, or SBIR/STTR topics
-- Pull SEC financials, clinical-trial leads, or Federal Register notices
+- Find grants, federal contracts, SAM.gov opportunities, or SBIR/STTR topics
+- Pull SEC financials, clinical-trial leads, Federal Register notices, or EU tenders
 - Check product recalls or decode a VIN for recalls
 
 ## When not to use

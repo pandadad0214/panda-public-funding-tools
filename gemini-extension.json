@@ -1,7 +1,7 @@
 {
   "name": "panda-public-funding-tools",
-  "version": "0.1.0",
-  "description": "US federal filings & safety MCP tools: grants, contracts, SBIR, SEC, trials, FedReg, recalls, VIN (8 tools).",
+  "version": "0.2.0",
+  "description": "Public money & safety MCP tools: grants, contracts, SAM.gov bids, SBIR, SEC, trials, FedReg, recalls, VIN, EU tenders (10 tools).",
   "contextFileName": "GEMINI.md",
   "settings": [
     {

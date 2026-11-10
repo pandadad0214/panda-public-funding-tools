@@ -2,7 +2,7 @@
 
 <!-- mcp-name: io.github.pandadad0214/panda-public-funding-tools -->
 
-Give Claude, Cursor or any MCP client 8 US federal money and filings tools: grants, contract awards and recompetes, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls and VIN decode. Each tool runs one public-data Apify Actor on your own Apify account and is priced per result. Part of the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) toolkit (36 tools in four focused servers).
+Give Claude, Cursor or any MCP client 10 public-money and filings tools: grants, contract awards and recompetes, SAM.gov opportunities, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls, VIN decode and EU tenders. Each tool runs one public-data Apify Actor on your own Apify account and is priced per result. Part of the [Panda Federation](https://github.com/pandadad0214/panda-federation-tools) toolkit (40 tools in four focused servers).
 
 [![PyPI](https://img.shields.io/pypi/v/panda-public-funding-tools)](https://pypi.org/project/panda-public-funding-tools/)
 [![Latest Release](https://img.shields.io/github/v/release/pandadad0214/panda-public-funding-tools?label=latest%20release)](https://github.com/pandadad0214/panda-public-funding-tools/releases/latest)
@@ -36,12 +36,12 @@ uvx panda-public-funding-tools
 
 | Field | Value |
 | --- | --- |
-| Purpose | Focused MCP server with 8 US federal money and filings tools: grants, contract awards and recompetes, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls and VIN decode. |
-| Use when | A task needs US federal funding, contract, filing, regulatory or safety-recall data from official government APIs. |
+| Purpose | Focused MCP server with 10 public-money and filings tools: grants, contract awards and recompetes, SAM.gov opportunities, SBIR/STTR topics, SEC financials, clinical trials, Federal Register, recalls, VIN decode and EU tenders. |
+| Use when | A task needs public funding, contract, filing, regulatory or safety-recall data from official government APIs (US federal sources plus EU TED tenders). |
 | Do not use when | The task is about papers and citations (use `panda-research-tools`), private-sector leads (`panda-leads-tools`) or site/email safety (`panda-web-security-tools`). |
 | Install | `uvx panda-public-funding-tools` (stdio, Python 3.11+) |
 | Auth | `APIFY_TOKEN` env var; runs bill to that Apify account. |
-| Tools | 8, listed under [Tools](#tools-8) |
+| Tools | 10, listed under [Tools](#tools-10) |
 | Outputs | JSON rows plus a one-line `summary` / `agentSummary`; Excel/CSV files on the Apify run. |
 | Side effects and cost | Starts Apify runs; pay per result; empty runs are not charged per result; `run_max_charge_usd` caps each call. Read-only toward third-party sites. |
 
@@ -73,24 +73,26 @@ gemini extensions install https://github.com/pandadad0214/panda-public-funding-t
 
 The extension prompts for `APIFY_TOKEN` on install and launches the server with `uvx panda-public-funding-tools`. Gallery listing is automatic once this public repo carries the `gemini-cli-extension` topic and a root `gemini-extension.json` (crawled daily).
 
-## Tools (8)
+## Tools (10)
 
 - `grants_finder`
 - `federal_contract_finder`
+- `sam_gov_opportunities`
 - `sbir_sttr_topic_radar`
 - `sec_financials_excel`
 - `clinical_trial_leads`
 - `federal_register_monitor`
 - `product_recall_monitor`
 - `vin_decoder_recalls`
+- `eu_ted_tenders`
 
 Each tool runs one Apify Actor on your account. Empty runs are not charged per result; every call is capped by `run_max_charge_usd`. Full schemas and prices: [umbrella README](https://github.com/pandadad0214/panda-federation-tools#domain-tool-lists).
 
 ## Sibling domain servers
 
-- [`panda-research-tools`](https://github.com/pandadad0214/panda-research-tools) — Scholarly integrity and papers: citation checks, literature and PubMed search, academic experts, PDF tables, Wayback Machine snapshots.
-- [`panda-leads-tools`](https://github.com/pandadad0214/panda-leads-tools) — Public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, topic trends, trucking carriers, IRS nonprofits, building permits, new Florida, Texas and New York businesses, H-1B visa sponsors, EU tenders.
-- [`panda-web-security-tools`](https://github.com/pandadad0214/panda-web-security-tools) — Site, email and agent safety: SPF/DKIM/DMARC audits, AI/SEO readiness, website change monitoring, hidden AI instructions scanner, bulk domain WHOIS/expiry, broken link checker.
+- [`panda-research-tools`](https://github.com/pandadad0214/panda-research-tools) — Scholarly integrity and papers: citation checks, literature and PubMed search, academic experts, PDF tables, Wayback Machine snapshots, topic trends.
+- [`panda-leads-tools`](https://github.com/pandadad0214/panda-leads-tools) — Public leads and enrichment: NPI providers, podcasts, local businesses, hiring signals, website enrichment, team pages, trucking carriers, IRS nonprofits, building permits, new Florida, Texas, New York and Colorado businesses, H-1B sponsors, French companies.
+- [`panda-web-security-tools`](https://github.com/pandadad0214/panda-web-security-tools) — Site, email and agent safety: SPF/DKIM/DMARC audits, AI/SEO readiness, website change monitoring, hidden AI instructions scanner, bulk domain WHOIS/expiry, broken link checker, RSS and Atom feed monitor.
 
 Index / compatibility mega-server: [panda-federation-tools](https://github.com/pandadad0214/panda-federation-tools) (use only when you truly need every tool).
 
